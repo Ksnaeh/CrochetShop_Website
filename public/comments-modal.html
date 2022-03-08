@@ -1,0 +1,18 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" onload="fetchComments();">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h5 class="modal-title text-light" id="review">Your Cart</h5>
+	<button type="button" class="btn btn-primary" style="display: none;" id="newComment"	data-dismiss="modal" onClick="checkoutOrder()">Checkout</button>
+            </div>
+            <div class="modal-body">
+                <div id="emptyComment">Nothing in cart yet. Shop now!</div>
+                <div class="row px-5" id="commentBody" style="font-family: Verdana; font-size: 16px"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

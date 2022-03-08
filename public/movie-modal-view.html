@@ -1,0 +1,72 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="movieModalView" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light">Product Info</h3>
+                <button type="button" class="close bg-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="margin-top: 10px">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <img class="img-fluid img-thumbnail" id="gamePoster" height="300px" width="200px">
+                    </div>
+                    
+                    <div class="col-7">
+                        <h3 class="hedmark" id="gameTitle"></h3>
+                        <table>
+                            <tr>
+                                <td class="akerhus">Date Released:</td>
+                                <td id="release"></td>
+                            </tr>
+                        </table>
+                            <br/>
+                            <table >
+                            <tr class="firstie">
+                           <td class="akerhus1">Price:</td>
+                                <td id="moviePoster"></td> 
+                            </tr>
+                        </table>
+                        <br/>
+                        <table >
+                            <tr class="firstie1">
+                                <td class="akerhus2">Quantity:</td>
+                                <td id="genre"></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="col-xs-3">
+                        <table class="table table-responsive table-md" style="margin-top: 10px">
+                            <!-- <tr>
+								<td class="cock">Popularity</td>
+								<td><p id="story"></p></td>
+                            </tr> -->
+                            <tr>
+                                <td class="cock">Description</td>
+                                <td id="director" style='text-align: left; word-break: break-all; word-wrap: break-word;'></td>
+                            </tr>
+                            <!-- <tr>
+								<td class="cock">Trailer</td>
+                                <td colspan="2"><iframe src="" frameborder="0" allowfullscreen id="trailer1"></iframe></td>
+							</tr> -->
+                             
+							
+                            
+                        </table>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="col-xs-12 px-3 text-center">
+                    <iframe src="" frameborder="0" allowfullscreen id="trailer1"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

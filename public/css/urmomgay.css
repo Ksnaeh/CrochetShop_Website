@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mystyle{
+	/*height: 90px;*/
+	/*width: 254px;*/
+	color: white;
+	font-size: smaller;
+}
+body{
+	background-image: url("../images/backgroundgif.gif");
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-family:Verdana;
+	color: #FFFFFF;
+	animation: fadein 4s;
+}
+.container{
+	font-family:Verdana;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.fugl{
+	font-family:Verdana;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.flip-container{
+	perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper{
+	transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back{
+	height: 200px;
+	width: 150px;
+}
+.flipper{
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;background: #E4E4E4;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front{
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+}
+footer{
+    background: #aaa;
+	font-family: Verdana;
+	font-size: 16px;
+    color: white;
+}
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+@keyframes fadein{
+	from {opacity: 0};
+	to {opacity: 2};
+}
+
+.siao{
+	height: auto;
+	border-radius: 5px;
+	width: 700px;
+	margin: auto;
+	text-align: left;
+	background-color: rgba(0,0,0,.5);
+	
+}
+.picture{
+	height: 250px;
+	width: 150px;
+	text-align: left;
+}
+
+.behind{
+	text-align: left;
+}
+.chicken, tr, td{
+	border: 1px solid black;
+}
+td{
+	width: inherit;
+}
